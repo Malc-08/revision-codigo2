@@ -8,24 +8,32 @@
   <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
   <title>Formulario</title>
 </head>
+
 <body>
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
   <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
-    <br />
-    Edad <input type="number" name="age" id="age">
-    <br />
+    <!-- Nombre <input type="text" name="name" id="name"> -->
+    <!--Agregué etiqueta label y la asocié con la etiqueta input-->
+    <label for="fullName" class="form-label">Nombre</label>
+    <input type="text" class="form-control form-control-with-icon" id="fullName" placeholder="Mickey Mouse">
+    <br>
+    <!-- Edad <input type="number" name="age" id="age"> -->
+    <!-- Agregué etiqueta label para agregar el texto "Edad" -->
+    <label for="age" class="form-label">Edad</label>
+    <input type="text" class="form-control form-control-with-icon" id="age" placeholder="25">
+    <br>
 
-    Nacionalidad
+
+    <label for="nationality">Nacionalidad</label>
     <select name="nationality" id="nationality">
       <option value="ar">Argentina</option>
       <option value="mx">Mexicana</option>
       <option value="per">Peruana</option>
       <option value="vnzl">Venezolana</option>
     </select>
-    <br />
+    <br> <!-- Cambié etiqueta <br /> por <br> -->
     <input type="submit">
   </form>
 
